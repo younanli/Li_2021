@@ -5,10 +5,10 @@
 
 
 ***************************
-Functions used for Li, 2020
+Functions used for Li & Munro, 2021
 ***************************
 
-Here is the documentation for all of the customized MatLab functions used in (Li, 2020). Please note that we used a MatLab implementation of the Crocker and Grier method (`kilfoil`_) for particle detection, and Jaqaman and Danuser method (`uTrack`_) for particle tracking.
+Here is the documentation for all of the customized MatLab functions used in (Li and Munro, 2021). Please note that we used a MatLab implementation of the Crocker and Grier method (`kilfoil`_) for particle detection, and Jaqaman and Danuser method (`uTrack`_) for particle tracking.
 
 
 

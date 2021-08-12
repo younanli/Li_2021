@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Li_2020'
-copyright = '2020, Younan Li'
+project = 'Li_2021'
+copyright = '2021, Younan Li'
 author = 'Younan Li & Edwin Munro'
 
 # The short X.Y version
