@@ -17,7 +17,6 @@ Here is the documentation for all of the customized MatLab functions used in (Li
    :numbered:
 
    content1.rst
-   content3.rst
    content2.rst
 
 

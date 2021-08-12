@@ -1,41 +1,47 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>3. Functions for modeling &mdash; Li_2020  documentation</title>
+  <title>2. Functions for modeling &mdash; Li_2020  documentation</title>
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="2. Scripts for analysis" href="content3.html" /> 
+    <link rel="prev" title="1. Functions for analysis" href="content1.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -72,6 +78,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -79,15 +86,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="content1.html">1. Functions for analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="content3.html">2. Scripts for analysis</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Functions for modeling</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#the-basic-model">3.1. The basic model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-differential-turnover-model">3.2. The differential turnover model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-filament-guide-filament-assembly-model">3.3. The Filament-Guide-Filament-Assembly model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#additional-functions">3.4. Additional functions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Functions for modeling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-basic-model">2.1. The basic model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-differential-turnover-model">2.2. The differential turnover model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-filament-guide-filament-assembly-model">2.3. The Filament-Guide-Filament-Assembly model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-functions">2.4. Additional functions</a></li>
 </ul>
 </li>
 </ul>
@@ -95,6 +101,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -129,18 +136,20 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">3. </span>Functions for modeling</li>
+      <li><span class="section-number">2. </span>Functions for modeling</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/content2.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -155,20 +164,20 @@
            <div itemprop="articleBody">
             
   <div class="section" id="functions-for-modeling">
-<h1><span class="section-number">3. </span>Functions for modeling<a class="headerlink" href="#functions-for-modeling" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Functions for modeling<a class="headerlink" href="#functions-for-modeling" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The following functions are used for math modeling and analysis in Figure 2, 6 and in Suplementary Figure S4.</p>
 </div>
 <div class="section" id="the-basic-model">
-<h2><span class="section-number">3.1. </span>The basic model<a class="headerlink" href="#the-basic-model" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.1. </span>The basic model<a class="headerlink" href="#the-basic-model" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The following functions are used for the basic math model in Figure 2, where we assumed that actin filaments’ assembly and disassembly rates lack orientation bias or dependence, and that filaments are rotated by a constant contraction rate.</p>
 </div>
-<span class="target" id="module-modeling.basic_model"></span><dl class="function">
-<dt id="modeling.basic_model.alignmentSimulator2">
-<code class="sig-prename descclassname">modeling.basic_model.</code><code class="sig-name descname">alignmentSimulator2</code><span class="sig-paren">(</span><em class="sig-param">initN</em>, <em class="sig-param">dt</em>, <em class="sig-param">totalT</em>, <em class="sig-param">iFrame</em>, <em class="sig-param">vivoCDF</em>, <em class="sig-param">strainMin</em>, <em class="sig-param">strainMax</em>, <em class="sig-param">deathMin</em>, <em class="sig-param">deathMax</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.basic_model.alignmentSimulator2" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="module-modeling.basic_model"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.basic_model.alignmentSimulator2">
+<span class="sig-prename descclassname"><span class="pre">modeling.basic_model.</span></span><span class="sig-name descname"><span class="pre">alignmentSimulator2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">initN</span></em>, <em class="sig-param"><span class="pre">dt</span></em>, <em class="sig-param"><span class="pre">totalT</span></em>, <em class="sig-param"><span class="pre">iFrame</span></em>, <em class="sig-param"><span class="pre">vivoCDF</span></em>, <em class="sig-param"><span class="pre">strainMin</span></em>, <em class="sig-param"><span class="pre">strainMax</span></em>, <em class="sig-param"><span class="pre">deathMin</span></em>, <em class="sig-param"><span class="pre">deathMax</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.basic_model.alignmentSimulator2" title="Permalink to this definition">¶</a></dt>
 <dd><p>alignmentSimulator2 explores parameter space for the basic math model.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -178,7 +187,7 @@
 <li><p><strong>totalT</strong> – total length of time to simulate</p></li>
 <li><p><strong>iFrame</strong> – period of time to record simulated results</p></li>
 <li><p><strong>vivoCDF</strong> – accumulative distribution function for the orientation of</p></li>
-<li><p><strong>distribution measured in vivo</strong> (<em>filaments</em>) – </p></li>
+<li><p><strong>vivo</strong> (<span><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">filaments</span> <span class="pre">distribution</span> <span class="pre">measured</span> <span class="pre">in</span></code></span>) – </p></li>
 <li><p><strong>strainMin</strong> – minimum contraction rate the system will explore</p></li>
 <li><p><strong>strainMax</strong> – maximum contraction rate the system will explore</p></li>
 <li><p><strong>deathMin</strong> – minimum death rate the system will explore</p></li>
@@ -194,9 +203,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="modeling.basic_model.filamentsRotate">
-<code class="sig-prename descclassname">modeling.basic_model.</code><code class="sig-name descname">filamentsRotate</code><span class="sig-paren">(</span><em class="sig-param">initN</em>, <em class="sig-param">dt</em>, <em class="sig-param">totalT</em>, <em class="sig-param">iFrame</em>, <em class="sig-param">vivoCDF</em>, <em class="sig-param">strainRate</em>, <em class="sig-param">deathRate</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.basic_model.filamentsRotate" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.basic_model.filamentsRotate">
+<span class="sig-prename descclassname"><span class="pre">modeling.basic_model.</span></span><span class="sig-name descname"><span class="pre">filamentsRotate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">initN</span></em>, <em class="sig-param"><span class="pre">dt</span></em>, <em class="sig-param"><span class="pre">totalT</span></em>, <em class="sig-param"><span class="pre">iFrame</span></em>, <em class="sig-param"><span class="pre">vivoCDF</span></em>, <em class="sig-param"><span class="pre">strainRate</span></em>, <em class="sig-param"><span class="pre">deathRate</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.basic_model.filamentsRotate" title="Permalink to this definition">¶</a></dt>
 <dd><p>filamentsRotate simulates the distribution of filament orientation with given contraction rate and death rate (turnover rate) assuming that filaments assemble at random orientations, cortex contracts with a constant contraction rate, and filaments in all directions have are equally likely to turnover.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -226,14 +235,14 @@ given timepoint</p>
 
 </div>
 <div class="section" id="the-differential-turnover-model">
-<h2><span class="section-number">3.2. </span>The differential turnover model<a class="headerlink" href="#the-differential-turnover-model" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.2. </span>The differential turnover model<a class="headerlink" href="#the-differential-turnover-model" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The following functions are used for the differential turnover model in Supplementary Figure S4, where we assumed that actin filaments’ with correct orientations are protected from disassembly.</p>
 </div>
-<span class="target" id="module-modeling.diff_Trnv_model"></span><dl class="function">
-<dt id="modeling.diff_Trnv_model.filamentsRotate2v3">
-<code class="sig-prename descclassname">modeling.diff_Trnv_model.</code><code class="sig-name descname">filamentsRotate2v3</code><span class="sig-paren">(</span><em class="sig-param">initN</em>, <em class="sig-param">dt</em>, <em class="sig-param">totalT</em>, <em class="sig-param">iFrame</em>, <em class="sig-param">vivoCDF</em>, <em class="sig-param">strainRate</em>, <em class="sig-param">deathRateMin</em>, <em class="sig-param">deathRateMax</em>, <em class="sig-param">k</em>, <em class="sig-param">kdgree</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.diff_Trnv_model.filamentsRotate2v3" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="module-modeling.diff_Trnv_model"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.diff_Trnv_model.filamentsRotate2v3">
+<span class="sig-prename descclassname"><span class="pre">modeling.diff_Trnv_model.</span></span><span class="sig-name descname"><span class="pre">filamentsRotate2v3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">initN</span></em>, <em class="sig-param"><span class="pre">dt</span></em>, <em class="sig-param"><span class="pre">totalT</span></em>, <em class="sig-param"><span class="pre">iFrame</span></em>, <em class="sig-param"><span class="pre">vivoCDF</span></em>, <em class="sig-param"><span class="pre">strainRate</span></em>, <em class="sig-param"><span class="pre">deathRateMin</span></em>, <em class="sig-param"><span class="pre">deathRateMax</span></em>, <em class="sig-param"><span class="pre">k</span></em>, <em class="sig-param"><span class="pre">kdgree</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.diff_Trnv_model.filamentsRotate2v3" title="Permalink to this definition">¶</a></dt>
 <dd><p>filamentsRotate2v3 silulates the distribution of filament orientation with in vivo contraction rate and assume that the death rate depends on the orientation of filament governed by a Hill function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -264,9 +273,9 @@ given timepoint</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="modeling.diff_Trnv_model.turnoverSimulator5">
-<code class="sig-prename descclassname">modeling.diff_Trnv_model.</code><code class="sig-name descname">turnoverSimulator5</code><span class="sig-paren">(</span><em class="sig-param">initN</em>, <em class="sig-param">dt</em>, <em class="sig-param">totalT</em>, <em class="sig-param">iFrame</em>, <em class="sig-param">vivoCDF</em>, <em class="sig-param">strainRate</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.diff_Trnv_model.turnoverSimulator5" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.diff_Trnv_model.turnoverSimulator5">
+<span class="sig-prename descclassname"><span class="pre">modeling.diff_Trnv_model.</span></span><span class="sig-name descname"><span class="pre">turnoverSimulator5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">initN</span></em>, <em class="sig-param"><span class="pre">dt</span></em>, <em class="sig-param"><span class="pre">totalT</span></em>, <em class="sig-param"><span class="pre">iFrame</span></em>, <em class="sig-param"><span class="pre">vivoCDF</span></em>, <em class="sig-param"><span class="pre">strainRate</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.diff_Trnv_model.turnoverSimulator5" title="Permalink to this definition">¶</a></dt>
 <dd><p>turnoverSimulator5 explores 200 random parameter pairs in the parameter space for differential turnover model.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -276,7 +285,7 @@ given timepoint</p>
 <li><p><strong>totalT</strong> – total length of time to simulate</p></li>
 <li><p><strong>iFrame</strong> – period of time to record simulated results</p></li>
 <li><p><strong>vivoCDF</strong> – accumulative distribution function for the orientation of</p></li>
-<li><p><strong>distribution measured in vivo.</strong> (<em>filaments</em>) – </p></li>
+<li><p><strong>vivo.</strong> (<span><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">filaments</span> <span class="pre">distribution</span> <span class="pre">measured</span> <span class="pre">in</span></code></span>) – </p></li>
 <li><p><strong>strainRate</strong> – contraction rate measured in vivo.</p></li>
 </ul>
 </dd>
@@ -299,14 +308,14 @@ given timepoint</p>
 
 </div>
 <div class="section" id="the-filament-guide-filament-assembly-model">
-<h2><span class="section-number">3.3. </span>The Filament-Guide-Filament-Assembly model<a class="headerlink" href="#the-filament-guide-filament-assembly-model" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.3. </span>The Filament-Guide-Filament-Assembly model<a class="headerlink" href="#the-filament-guide-filament-assembly-model" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The following functions are used for the FGFA model in Figure 6, where we assumed that a portion of actin filaments assemble with the orientation of existing filaments.</p>
 </div>
-<span class="target" id="module-modeling.FGFA_model"></span><dl class="function">
-<dt id="modeling.FGFA_model.alignmentSimulator4">
-<code class="sig-prename descclassname">modeling.FGFA_model.</code><code class="sig-name descname">alignmentSimulator4</code><span class="sig-paren">(</span><em class="sig-param">VivoCDF</em>, <em class="sig-param">initN</em>, <em class="sig-param">dt</em>, <em class="sig-param">totalT</em>, <em class="sig-param">iFrame</em>, <em class="sig-param">strainRate</em>, <em class="sig-param">deathRate</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.FGFA_model.alignmentSimulator4" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="module-modeling.FGFA_model"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.FGFA_model.alignmentSimulator4">
+<span class="sig-prename descclassname"><span class="pre">modeling.FGFA_model.</span></span><span class="sig-name descname"><span class="pre">alignmentSimulator4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">VivoCDF</span></em>, <em class="sig-param"><span class="pre">initN</span></em>, <em class="sig-param"><span class="pre">dt</span></em>, <em class="sig-param"><span class="pre">totalT</span></em>, <em class="sig-param"><span class="pre">iFrame</span></em>, <em class="sig-param"><span class="pre">strainRate</span></em>, <em class="sig-param"><span class="pre">deathRate</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.FGFA_model.alignmentSimulator4" title="Permalink to this definition">¶</a></dt>
 <dd><p>alignmentSimulator4 explores 50 random lamda value for FGFA model</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -316,7 +325,7 @@ given timepoint</p>
 <li><p><strong>totalT</strong> – total length of time to simulate</p></li>
 <li><p><strong>iFrame</strong> – period of time to record simulated results</p></li>
 <li><p><strong>vivoCDF</strong> – accumulative distribution function for the orientation of</p></li>
-<li><p><strong>distribution measured in vivo.</strong> (<em>filaments</em>) – </p></li>
+<li><p><strong>vivo.</strong> (<span><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">filaments</span> <span class="pre">distribution</span> <span class="pre">measured</span> <span class="pre">in</span></code></span>) – </p></li>
 <li><p><strong>strainRate</strong> – measured contraction rate in vivo.</p></li>
 <li><p><strong>deathRate</strong> – measured turnover rate in vivo.</p></li>
 </ul>
@@ -329,9 +338,9 @@ given timepoint</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="modeling.FGFA_model.filamentsRotate4">
-<code class="sig-prename descclassname">modeling.FGFA_model.</code><code class="sig-name descname">filamentsRotate4</code><span class="sig-paren">(</span><em class="sig-param">VivoCDF</em>, <em class="sig-param">initN</em>, <em class="sig-param">dt</em>, <em class="sig-param">totalT</em>, <em class="sig-param">iFrame</em>, <em class="sig-param">strainRate</em>, <em class="sig-param">deathRate</em>, <em class="sig-param">p</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.FGFA_model.filamentsRotate4" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.FGFA_model.filamentsRotate4">
+<span class="sig-prename descclassname"><span class="pre">modeling.FGFA_model.</span></span><span class="sig-name descname"><span class="pre">filamentsRotate4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">VivoCDF</span></em>, <em class="sig-param"><span class="pre">initN</span></em>, <em class="sig-param"><span class="pre">dt</span></em>, <em class="sig-param"><span class="pre">totalT</span></em>, <em class="sig-param"><span class="pre">iFrame</span></em>, <em class="sig-param"><span class="pre">strainRate</span></em>, <em class="sig-param"><span class="pre">deathRate</span></em>, <em class="sig-param"><span class="pre">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.FGFA_model.filamentsRotate4" title="Permalink to this definition">¶</a></dt>
 <dd><p>filamentsRotate4 simulates the distribution of filament orientation with
 in vivo contraction rate and turnover rate, assuming that lamda portion of
 the new born filament inherent the orientation of an existing filament.</p>
@@ -364,14 +373,14 @@ given timepoint</p>
 
 </div>
 <div class="section" id="additional-functions">
-<h2><span class="section-number">3.4. </span>Additional functions<a class="headerlink" href="#additional-functions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.4. </span>Additional functions<a class="headerlink" href="#additional-functions" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>the following functions are used in multiple models to help build the model and/or analyze modeling results.</p>
 </div>
-<span class="target" id="module-modeling.extra"></span><dl class="function">
-<dt id="modeling.extra.AsymmetryRiseSlope">
-<code class="sig-prename descclassname">modeling.extra.</code><code class="sig-name descname">AsymmetryRiseSlope</code><span class="sig-paren">(</span><em class="sig-param">in</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.extra.AsymmetryRiseSlope" title="Permalink to this definition">¶</a></dt>
+<span class="target" id="module-modeling.extra"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.extra.AsymmetryRiseSlope">
+<span class="sig-prename descclassname"><span class="pre">modeling.extra.</span></span><span class="sig-name descname"><span class="pre">AsymmetryRiseSlope</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">in</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.extra.AsymmetryRiseSlope" title="Permalink to this definition">¶</a></dt>
 <dd><p>AsymmetryRiseSlope fit a straight line to the Asymmetry data from 61 - 90 seconds to measure asymmetry slope during that period.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -384,9 +393,9 @@ given timepoint</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="modeling.extra.EstimateOrientation">
-<code class="sig-prename descclassname">modeling.extra.</code><code class="sig-name descname">EstimateOrientation</code><span class="sig-paren">(</span><em class="sig-param">filaments</em>, <em class="sig-param">nBorn</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.extra.EstimateOrientation" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.extra.EstimateOrientation">
+<span class="sig-prename descclassname"><span class="pre">modeling.extra.</span></span><span class="sig-name descname"><span class="pre">EstimateOrientation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">filaments</span></em>, <em class="sig-param"><span class="pre">nBorn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.extra.EstimateOrientation" title="Permalink to this definition">¶</a></dt>
 <dd><p>EstimateOrientation first estimate the accumulative distribution function of a given distribution of filament orientation, and then calculate the orientation of new filaments based on the CDF.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -402,9 +411,9 @@ given timepoint</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="modeling.extra.EstimateOrientationV2">
-<code class="sig-prename descclassname">modeling.extra.</code><code class="sig-name descname">EstimateOrientationV2</code><span class="sig-paren">(</span><em class="sig-param">CDF</em>, <em class="sig-param">nBorn</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.extra.EstimateOrientationV2" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.extra.EstimateOrientationV2">
+<span class="sig-prename descclassname"><span class="pre">modeling.extra.</span></span><span class="sig-name descname"><span class="pre">EstimateOrientationV2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">CDF</span></em>, <em class="sig-param"><span class="pre">nBorn</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.extra.EstimateOrientationV2" title="Permalink to this definition">¶</a></dt>
 <dd><p>EstimateOrientationV2 generate the orientation of new filaments based on
 the orientation of existing filaments</p>
 <dl class="field-list simple">
@@ -421,9 +430,9 @@ the orientation of existing filaments</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="modeling.extra.filamentIntensityplateau">
-<code class="sig-prename descclassname">modeling.extra.</code><code class="sig-name descname">filamentIntensityplateau</code><span class="sig-paren">(</span><em class="sig-param">in</em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.extra.filamentIntensityplateau" title="Permalink to this definition">¶</a></dt>
+<dl class="mat function">
+<dt class="sig sig-object mat" id="modeling.extra.filamentIntensityplateau">
+<span class="sig-prename descclassname"><span class="pre">modeling.extra.</span></span><span class="sig-name descname"><span class="pre">filamentIntensityplateau</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">in</span></em><span class="sig-paren">)</span><a class="headerlink" href="#modeling.extra.filamentIntensityplateau" title="Permalink to this definition">¶</a></dt>
 <dd><p>filamentIntensityplatueau fit a straight line to the intensity data from
 41 - 90 seconds to measure intensity slope during that period.</p>
 <dl class="field-list simple">
@@ -445,27 +454,28 @@ the orientation of existing filaments</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="content3.html" class="btn btn-neutral float-left" title="2. Scripts for analysis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="content1.html" class="btn btn-neutral float-left" title="1. Functions for analysis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Younan Li
+        &#169; Copyright 2020, Younan Li.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -473,7 +483,6 @@ the orientation of existing filaments</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
