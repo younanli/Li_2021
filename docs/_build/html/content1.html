@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1. Functions for analysis &mdash; Li_2021  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. Functions for modeling" href="content2.html" />
+    <link rel="prev" title="Functions used for Li &amp; Munro, 2021" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Li_2021
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Functions for analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content2.html">2. Functions for modeling</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Li_2021</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">1. </span>Functions for analysis</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/content1.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="functions-for-analysis">
+<h1><span class="section-number">1. </span>Functions for analysis<a class="headerlink" href="#functions-for-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following functions are used to analyze movies in Figure 1, 3, 4, 5, and in Suplementary Figures 1, 2, 3.</p>
+</div>
+<span class="target" id="module-analysis"></span><dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.BreakDownTraj">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">BreakDownTraj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">in</span></em>, <em class="sig-param"><span class="pre">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.BreakDownTraj" title="Permalink to this definition">¶</a></dt>
+<dd><p>BreakDownTraj takes in trajectories and break them down to shorter
+fragments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>in</strong> – trajectories in simple format</p></li>
+<li><p><strong>b</strong> – length of the short fragment</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>out: trajectories with length b.</p>
+</dd>
+</dl>
+<p>Note: for each trajectory, if the tail is longer than 5 frames, then keep
+the tail.</p>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.Kilfoil_to_simple_traj">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">Kilfoil_to_simple_traj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">in</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.Kilfoil_to_simple_traj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kilfoil_to_simple_traj: Transform the output of Kilfoil particle tracking into the format produced by uTrackToSimpleTraj.m</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>in</strong> – output data in array format used by Kilfoil</p>
+</dd>
+</dl>
+<dl>
+<dt>Output:</dt><dd><p>out: a list of particle tracks in the format output by the function uTrackToSimpleTraj:</p>
+<blockquote>
+<div><p>‘first’ =   the first movie frame in which this track appears</p>
+<p>‘last’ =    the last movie frame in which this track appears.</p>
+<p>‘lifetime’ = the length of the track in frames.</p>
+<p>‘x’ = an array containing the sequence of x positions.</p>
+<p>‘y’ = an array containing the sequence of y positions.</p>
+<p>‘I’ = an array containing the intensity values.</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.Kilfoil_to_uTrack_particles">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">Kilfoil_to_uTrack_particles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">particles</span></em>, <em class="sig-param"><span class="pre">firstFrame</span></em>, <em class="sig-param"><span class="pre">nFrames</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.Kilfoil_to_uTrack_particles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kilfoil_to_uTrack_particles Transforms a set of particle data produced by Kilfoil
+preTrack into format for tracking by uTrack.  Extracts a subset of data defined by firstfarme and nrames.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>particles</strong> – An array of particles in Kilfoil format</p></li>
+<li><p><strong>firstFrame</strong> – First frame to extract</p></li>
+<li><p><strong>nFrames</strong> – Total number of frames to extrract.</p></li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>Output:</dt><dd><p>out: An array of structures f length nFrames, where each structyure
+defines a list of particles with the following fields:</p>
+<blockquote>
+<div><p>xCoord: An array of x coordinates, one for each particle</p>
+<p>yCoord: An array of y coordinates, one for each particle</p>
+<p>amp: An array of intensities, one for each particle</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.Rotation">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">Rotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">tracks</span></em>, <em class="sig-param"><span class="pre">center</span></em>, <em class="sig-param"><span class="pre">angle</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.Rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotation rotates the x,y coordinates of trajectories around the center of the movie.
+:param tracks: tracks in Kilfoil format
+:param center: center of the movie in [x;y] format
+:param angle: rotation angle</p>
+<dl class="simple">
+<dt>Output:</dt><dd><p>out: the same set of trajectories with new x,y coordinates.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.TrajDirection2">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">TrajDirection2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">trks</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.TrajDirection2" title="Permalink to this definition">¶</a></dt>
+<dd><p>TrajDirection2 calculate the direction of each trajectory. The way it
+measures the direction is to calculate the atan angle between the first
+and the last point.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>trks</strong> – trajectories in simple format.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>out: trajectories in simple format with direction field.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.addAsymmetry">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">addAsymmetry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">trks</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.addAsymmetry" title="Permalink to this definition">¶</a></dt>
+<dd><p>addAsymmetry adds asymmetry values to each trajectory. The asymmetry value is calculated as S=-ln(1-((v1-v2)^2)/(v1+v2)^2)), where v1 and v2 are the eigenvalues v1 and v2 of the variance-covariance matrix of the trajectory positions over time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>trks</strong> – tracks that’s in the simple format</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>out: trajecoties in simple format with Asymmetry field.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.addSpeed">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">addSpeed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">trk</span></em>, <em class="sig-param"><span class="pre">b</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.addSpeed" title="Permalink to this definition">¶</a></dt>
+<dd><p>addSpeed adds the instant speed of each trajectory at each given point. First it will take a trajectory, and using a moving average b to smooth the x and y position. After smoothing, it will calculate the distance between (xt,yt) and (x(t-1), y(t-1)), and record that as the instant speed at that given moment t.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>trk</strong> – should be simple format;</p></li>
+<li><p><strong>b</strong> – the span to smooth the data;</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>out: the simple format trajectory database, with one extra structure, speed, which record the speed of each trajectory at every time point.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.filterByLifetime">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">filterByLifetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">tracks</span></em>, <em class="sig-param"><span class="pre">min_max_track_L</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.filterByLifetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>filterByLifetime returns the subset of particle tracks whose lengths lie within the range defined by max_min_track_L.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tracks</strong> – <p>An array of particle trajectory structures in format produced by uTrackToSimpleTraj:</p>
+<p>’first’ =   the first movie frame in which this track appears</p>
+<p>’last’ =    the last movie frame in which this track appears.</p>
+<p>’lifetime’ = the length of the track in frames.</p>
+<p>’x’ = an array containing the sequence of x positions.</p>
+<p>’y’ = an array containing the sequence of y positions.</p>
+<p>’I’ = an array containing the intensity values.</p>
+</p></li>
+<li><p><strong>min_max_track_L</strong> – [min max]</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>subTracks: subset of tracks statisfying min &lt; track length &lt; max</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.interpolateGaps">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">interpolateGaps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">in</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.interpolateGaps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given an array of trajectories in simple fomrat, interpolateGaps finds gaps in each trajectory represented by NaN and fills x, y and I values by linear interpolation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>in</strong> – <p>array of trajectories in simple format:
+‘first’ =   the first movie frame in which this track appears</p>
+<p>’last’ =    the last movie frame in which this track appears.</p>
+<p>’lifetime’ = the length of the track in frames.</p>
+<p>’x’ = an array containing the sequence of x positions.</p>
+<p>’y’ = an array containing the sequence of y positions.</p>
+<p>’I’ = an array containing the intensity values.</p>
+</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>out: same array with interpolated values</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.measureManyAlignment">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">measureManyAlignment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">in</span></em>, <em class="sig-param"><span class="pre">ROI</span></em>, <em class="sig-param"><span class="pre">center</span></em>, <em class="sig-param"><span class="pre">angle</span></em>, <em class="sig-param"><span class="pre">threshold</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.measureManyAlignment" title="Permalink to this definition">¶</a></dt>
+<dd><p>measureManyAlignment takes in a raw movie, and measure alignment degree of filament orientation for each frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>in</strong> – raw movie</p></li>
+<li><p><strong>ROI</strong> – region of interest in [xmin,xmax,ymin,ymax] format</p></li>
+<li><p><strong>center</strong> – center of the movie, for rotation. See Rotation.mat for more infomation</p></li>
+<li><p><strong>angle</strong> – for Rotation. See Rotation.mat for more information</p></li>
+<li><p><strong>threshold</strong> – minimum pixel intensity to be considered as signal</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>out: The direction distribution of pixels in ROI  from -pi/2 to pi/2 in 45 bins</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.measureOneAlignment">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">measureOneAlignment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">ip</span></em>, <em class="sig-param"><span class="pre">center</span></em>, <em class="sig-param"><span class="pre">angle</span></em>, <em class="sig-param"><span class="pre">threshold</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.measureOneAlignment" title="Permalink to this definition">¶</a></dt>
+<dd><p>this function uses two 3X3 kernel masks to calculate the direction of each pixel. Notice that the final product takes into consideration of both the sharpness of the boundary and the intensity of the pixel at that location.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ip</strong> – the original movie frame</p></li>
+<li><p><strong>center</strong> – the center of that frame used to rotate the image. See</p></li>
+<li><p><strong>infomation.</strong> (<span><code class="xref mat mat-obj docutils literal notranslate"><span class="pre">Rotation.mat</span> <span class="pre">for</span> <span class="pre">more</span></code></span>) – </p></li>
+<li><p><strong>angle</strong> – Angle for rotation. see function Rotation.mat for more</p></li>
+<li><p><strong>infomation.</strong> – </p></li>
+<li><p><strong>threshold</strong> – minimum intensity of each pixel to be considered</p></li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>output:</dt><dd><p>out: the orientation of each pixel in the following format:</p>
+<blockquote>
+<div><p>1st column: x position</p>
+<p>2nd column: y position</p>
+<p>3nd column: intensity</p>
+<p>4th column: angle</p>
+<p>5th column: norm (used to plot angle distribution)</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.plotTraj">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">plotTraj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">trks</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.plotTraj" title="Permalink to this definition">¶</a></dt>
+<dd><p>PlotTraj plots all the trajectories onto a same graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>trks</strong> – trajecotories in simple format</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>plots of all trajectories on a same graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.showParticles">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">showParticles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">stk</span></em>, <em class="sig-param"><span class="pre">trks</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.showParticles" title="Permalink to this definition">¶</a></dt>
+<dd><p>ShowParticles generates TIFF images that have tracking results overlayed
+on top of the raw image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stk</strong> – stacks of raw movie.</p></li>
+<li><p><strong>trks</strong> – trajectories in simple format.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>TIFF images that have tracking results overlayed on top of the raw
+image.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.simple_to_Kilfoil_traj">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">simple_to_Kilfoil_traj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">trks</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.simple_to_Kilfoil_traj" title="Permalink to this definition">¶</a></dt>
+<dd><p>simple_to_Kilfoil_traj: Transform the output of uTrack_to_simple_traj into the format produced by Kilfoil</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>trks</strong> – <p>a list of particle tracks which is assumed to be in the format output by the function uTrackToSimpleTraj:</p>
+<p>’first’ =   the first movie frame in which this track appears</p>
+<p>’last’ =    the last movie frame in which this track appears.</p>
+<p>’lifetime’ = the length of the track in frames.</p>
+<p>’x’ = an array containing the sequence of x positions.</p>
+<p>’y’ = an array containing the sequence of y positions.</p>
+<p>’I’ = an array containing the intensity values.</p>
+</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>out: output data in array format used by Kilfoil with columns: Xpos, Ypos, Int, frame#, trackID, xDis/yDis/d/SI/speed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="analysis.uTrack_to_simple_traj">
+<span class="sig-prename descclassname"><span class="pre">analysis.</span></span><span class="sig-name descname"><span class="pre">uTrack_to_simple_traj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">tracks</span></em><span class="sig-paren">)</span><a class="headerlink" href="#analysis.uTrack_to_simple_traj" title="Permalink to this definition">¶</a></dt>
+<dd><p>uTrack_to_simple_Traj transforms track data from the tracksFinal format into a form that is suitable for further analysis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tracks</strong> – the tracksFinal structure output by ScriptTrackGeneral.</p>
+</dd>
+</dl>
+<dl>
+<dt>Output:</dt><dd><p>out: an array of structures, one for each track, whose fields are defined as follows:</p>
+<blockquote>
+<div><p>‘first’ =   the first movie frame in which this track appears</p>
+<p>‘last’ =    the last movie frame in which this track appears.</p>
+<p>‘lifetime’ = the length of the track in frames.</p>
+<p>‘x’ = an array containing the sequence of x positions.</p>
+<p>‘y’ = an array containing the sequence of y positions.</p>
+<p>‘I’ = an array containing the intensity values.</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="content2.html" class="btn btn-neutral float-right" title="2. Functions for modeling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Functions used for Li &amp; Munro, 2021" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Younan Li.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
